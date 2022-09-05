@@ -1,0 +1,79 @@
+.analytics-container{
+    width: 100%;
+    background: #fff;
+    min-height: 80vh;
+    margin:10px 0 0;
+    border-radius: 10px;
+    padding: 45px 56px 15px;
+}
+.analytics-container .title-container{
+    padding: 0;
+}
+.analytics-container .title-container h4,
+.analytics-container .send-notifications h4{
+    font-size: 30px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: #23282e;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: capitalize;
+    font-family: "firaSans-semibold";
+    font-weight: 600;
+}
+.analytics-container .analyticscard-container{
+    display: flex;
+}
+.analytics-container .download-btn-grp{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+.analytics-container .download-btn-grp > .btn-primary ~ .btn-primary,
+.analytics-container .download-btn-grp > a ~ .btn-primary{
+    margin-left: 20px;
+}
+.analytics-container .send-notifications{
+    padding: 40px 0 10px;
+}
+.analytics-container .send-notifications form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+.analytics-container .send-notifications form .form-group{
+    width: 80%;
+    margin: 0;
+}
+.analytics-container .send-notifications form .btn{
+    width: 300px;
+}
+@media screen and (max-width: 991px) {
+    .analytics-container{
+        padding: 24px 20px 32px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .analytics-container .analyticscard-container{
+        display: block;
+    }        
+    .analytics-container .send-notifications form{
+        flex-direction: column;
+    }
+    .analytics-container .send-notifications form .form-group,
+    .analytics-container .send-notifications form .btn{
+        width: 100%;
+        height: 42px;
+    }
+}
+@media screen and (max-width:500px) {
+    .analytics-container .download-btn-grp{
+        display: block;
+    }
+    .analytics-container .download-btn-grp .btn-primary{
+        margin: 0 0 10px 0 !important;
+        width: 100%;
+    }
+}

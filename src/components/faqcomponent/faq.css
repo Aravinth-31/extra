@@ -1,0 +1,235 @@
+.faq-banner {
+  width: 100%;
+  height: 520px;
+  background: #fff7ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq-banner h5 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #23282e;
+  margin-bottom: 16px;
+  font-family: "firaSans-medium";
+}
+.faq-banner p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #23282e;
+}
+.faq-banner-right {
+  width: 360px;
+  height: 360px;
+  margin-left: 136px;
+  margin-top: 50px;
+}
+.faq-banner-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.faq-banner-left .input-icon {
+  margin: 0;
+  margin-top: 32px;
+  width: 100%;
+  height: 41px;
+  border: 0;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+/* choose help */
+.choose-container {
+  padding-top: 48px !important;
+}
+.choose-help {
+  display: flex;
+  justify-content: space-between;
+}
+.choose-container h5 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #23282e;
+  margin-bottom: 32px;
+  font-family: "firaSans-medium";
+}
+.choose-help-card {
+  width: 304px;
+  height: 134px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.choose-help-card.active {
+  border: 2px solid var(--color-theme);
+}
+.choose-help-card h6 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #23282e;
+  margin-top: 16px;
+  font-family: "firaSans-medium";
+}
+.choose-help-card.active h6 {
+  color: var(--color-theme);
+}
+/* accordion card */
+.choose-accordion {
+  margin-top: 48px;
+}
+.choose-accordion-card {
+  width: 100%;
+  min-height: 51px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+.choose-accordion-card .accor-header {
+  padding: 10px 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.choose-accordion-card .accor-header h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #23282e;
+  font-family: "firaSans-medium";
+  width: calc(100% - 40px);
+}
+.choose-accordion-card .accor-body {
+  padding: 8px 16px;
+  background: #fff9f3;
+  border-radius: 6px;
+  margin: 6px 16px 16px;
+}
+.choose-accordion-card .accor-body p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #23282e;
+  opacity: 0.6;
+}
+.choose-accordion-card .accor-body p a{
+  display: unset;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.choose-accordion-card .collapse {
+  display: none;
+}
+.choose-accordion-card .collapse.show {
+  display: block;
+}
+.choose-accordion-card .accor-header span.span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(#000, #000), linear-gradient(#000, #000);
+  background-position: center;
+  background-size: 40% 2px, 2px 40%;
+  background-repeat: no-repeat;
+}
+.choose-accordion-card .accor-header[aria-expanded="true"] span.span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(red, red), linear-gradient(red, red);
+  background-position: center;
+  background-size: 40% 2px, 0px 40%;
+  background-repeat: no-repeat;
+}
+/* can't find */
+.cant-find {
+  margin-top: 48px;
+}
+.cant-find h6 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #23282e;
+  font-family: "firaSans-medium";
+  margin-bottom: 24px;
+}
+.cant-find p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #23282e;
+  margin-bottom: 16px;
+}
+.cant-find span {
+  font-size: 16px;
+  line-height: 19px;
+  color: #23282e;
+}
+.cant-find span a {
+  color: var(--color-theme);
+  margin-left: 5px;
+  display: inline;
+}
+@media screen and (max-width: 991px) {
+  .faq-banner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px;
+  }
+  .faq-banner h5 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 8px;
+  }
+  .faq-banner p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .faq-banner-right {
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    margin-top: 70px;
+  }
+  .faq-banner-left .input-icon {
+    margin-top: 24px;
+  }
+  .choose-container h5 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+  .choose-container {
+    padding-top: 40px !important;
+  }
+  .cant-find {
+    margin-top: 32px;
+  }
+  .cant-find h6 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  .choose-help {
+    overflow: auto;
+  }
+  .choose-help-card {
+    flex: none;
+    width: 264px;
+    height: 134px;
+    margin-right: 16px;
+  }
+}
+.highlight {
+  color: var(--color-theme);
+  background-color: white;
+}

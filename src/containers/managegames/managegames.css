@@ -1,0 +1,70 @@
+.manage-games .no-data{
+    margin: 20px 0 0;
+    font-family: "firaSans-medium";
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 29px;
+    color: #ff4949;
+}
+.manage-games .no-game-wrapper{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.manage-games .no-game-wrapper .no-game{
+    font-family: firaSans-regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #23282e;
+    opacity: 0.5;
+    text-align: center;
+}
+.manage-games .no-game-wrapper .no-game-span{
+    font-family: firaSans-regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #e25569;
+    margin-top: 15px;
+}
+@media screen and (max-width: 991px) {
+    .manage-games .no-game-wrapper .no-game {
+        font-size: 16px;
+    }
+    .manage-games .no-game-wrapper .no-game-span{
+    font-size: 14px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .manage-games .no-game-wrapper{
+      height: 50vh;
+    }
+    .manage-games .no-game-wrapper .no-game {
+      font-size: 14px;
+    }
+    .manage-games .no-game-wrapper .no-game-span{
+      margin-top: 5px;
+      font-size: 12px;
+    }
+}
+  
+@media screen and (max-width: 400px) {
+    .manage-games .no-game-wrapper .no-game {
+      font-size: 12px;
+    }
+    .manage-games .no-game-wrapper .no-game-span{
+      font-size: 10px;
+    }
+}

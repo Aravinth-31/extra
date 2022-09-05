@@ -1,0 +1,267 @@
+.hovercard-mobile{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    z-index: 9;
+}
+.hovercard-mobile .close-div{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hovercard-mobile .card-wrapper{
+    width: 100%;
+    position: absolute;
+    left: 0;    
+    min-height: 264px;
+    background: #fff;
+    border-radius: 12px 12px 0px 0px;
+    padding: 10px;
+    margin-bottom: -264px;
+    transition: margin-bottom .5s ease;
+}
+.hovercard-mobile .card-wrapper.manage{
+    height: 330px;
+    margin-bottom: -330px;
+}
+.hovercard-mobile.active .card-wrapper{
+    margin-bottom: 0px;
+}
+.hovercard-mobile .handle-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+}
+.hovercard-mobile .handle-wrapper span{
+    width: 48px;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.24);
+    cursor: move;
+}
+.hovercard-mobile .content-wrapper .content-wrapper-top{
+    display: flex;
+    padding: 9px 6px 16px;
+}
+.hovercard-mobile .content-wrapper .content-wrapper-top img.title-img{
+    width: 95px;
+    height: 95px;
+    border-radius: 6px;
+    object-fit: unset;
+}
+.hovercard-mobile .playcard-content-mob{
+    padding-left: 16px;
+}
+.hovercard-mobile .playcard-content-mob h5{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #23282E;
+    margin-bottom: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;  
+}
+.hovercard-mobile .playcard-content-mob p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+    display: flex;
+    align-items: center;
+    color: #23282E;
+    opacity: 0.8;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;  
+}
+.hovercard-mobile .playcard-content-mob .playcard-review{
+    display: flex;
+    margin-bottom: 0;
+}
+.hovercard-mobile .playcard-content-mob .playcard-review-content{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #23282e;
+    margin-right: 15px;
+}
+.hovercard-mobile .playcard-content-mob .playcard-review-content h4{
+    font-size: 12px;
+}
+.hovercard-mobile .playcard-content-mob .playcard-review-content h4.questions{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.hovercard-mobile .playcard-content-mob .playcard-review-content h4 span{
+    color: #23282E;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: normal;
+    align-items: center;
+    display: flex;
+}
+.hovercard-mobile .content-wrapper-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.hovercard-mobile .content-wrapper-bottom .svg-wrapper svg{
+    margin-right: 16px;
+    cursor: pointer;
+}
+.hovercard-mobile .content-wrapper-bottom .svg-wrapper .liked path{
+    fill: var(--color-theme);
+}
+.hovercard-mobile .content-wrapper-bottom button{
+    width: 164px;
+    height: 40px;
+}
+.hovercard-mobile .content-wrapper-bottom button.w180{
+    width: 180px;
+}
+.hovercard-mobile .more-details-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+}
+.hovercard-mobile .more-details-wrapper h4{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #E25569;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.allgames-container .hovercard-mobile .content-wrapper-bottom{
+    border-bottom: none;
+}
+.allgames-container .hovercard-mobile .more-details-wrapper{
+    display: none;
+}
+.allgames-container .hovercard-mobile .card-wrapper{
+    min-height: 250px;
+}
+.allgames-container .hovercard-mobile .svg-wrapper{
+    visibility: hidden;
+}
+
+/* slider */
+.hovercard-mobile .playcard-actions .switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+  }  
+.hovercard-mobile .playcard-actions .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.hovercard-mobile .playcard-actions .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 4px;
+}
+.hovercard-mobile .playcard-actions .disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+.hovercard-mobile .playcard-actions .slider:before {
+    position: absolute;
+    content: "";
+    height: 16.8px;
+    width: 16.8px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.hovercard-mobile .playcard-actions input:checked + .slider {
+    background-color: #2AB070;
+}
+.hovercard-mobile .playcard-actions input:focus + .slider {
+    box-shadow: 0 0 1px #2AB070;
+}
+.hovercard-mobile .playcard-actions input:checked + .slider:before {
+    -webkit-transform: translateX(23px);
+    -ms-transform: translateX(23px);
+    transform: translateX(23px);
+}
+/*slider end*/
+/*tooltip*/
+.hovercard-mobile .btn-tooltip{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 5px;
+  }  
+  .hovercard-mobile .btn-tooltip .switch:hover + .tooltip{
+  display: flex;
+  justify-content: center;
+  }
+  .hovercard-mobile .btn-tooltip .tooltip{
+    width: 160px;
+    position: absolute;
+    top: 30px;
+    left: -40px;
+    background: #404040;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    display: none;
+    transform: translateX(-50%);
+  }
+  .hovercard-mobile .btn-tooltip .tooltip:before{
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    position: absolute;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #404040;
+    left: 80%;
+    top: -12px;
+    transform: rotate(90deg);
+  }
+  .hovercard-mobile  .btn-tooltip .tooltip span{
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    z-index: 1000;
+  }
+  

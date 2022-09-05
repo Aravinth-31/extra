@@ -1,0 +1,133 @@
+.purchaseorder {
+  display: flex;
+  justify-content: space-between;
+}
+.purchaseorder-left,
+.purchaseorder-right {
+  width: 48%;
+}
+.premium-plan-card {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.16);
+  border-radius: 6px;
+  padding: 32px;
+}
+.premium-plan-card .premium-plan-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.premium-plan-card .premium-plan-heading h5 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #23282e;
+  margin-bottom: 8px;
+  font-family: "firaSans-medium";
+}
+.premium-plan-card .premium-plan-heading span {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.32px;
+
+  color: #23282e;
+}
+.premium-plan-card .premium-plan-heading {
+  margin-bottom: 30px;
+}
+.premium-review-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+.premium-review-group {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 24px 0;
+}
+.premium-review-group:nth-child(2) {
+  border-bottom: 0px;
+}
+.premium-review-card span {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.32px;
+  color: #23282e;
+}
+.premium-review-card h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.32px;
+  color: #23282e;
+  font-family: "firaSans-medium";
+}
+.premium-review-group.subtotal h5,
+.premium-review-group.subtotal span {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "firaSans-regular";
+}
+.premium-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.premium-total span,
+.premium-total h5 {
+  font-family: "firaSans-semibold";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.32px;
+  color: #23282e;
+}
+.premium-button {
+  display: flex;
+  flex-direction: column;
+}
+.premium-button button {
+  height: 48px;
+  margin: 8px 0 16px 0 !important;
+  width: 100%;
+}
+.premium-button span {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.32px;
+  color: #23282e;
+  opacity: 0.5;
+}
+.premium-plan-right {
+  width: 110px;
+  height: 126px;
+}
+.premium-plan-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 991px) {
+  .purchaseorder {
+    flex-direction: column;
+  }
+  .purchaseorder-left,
+  .purchaseorder-right {
+    width: 100%;
+  }
+  .premium-total span,
+  .premium-total h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .premium-plan-right {
+    width: 84px;
+    height: 96px;
+  }
+  .premium-plan-card .premium-plan-heading h5 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .premium-plan-card {
+    padding: 24px;
+  }
+}

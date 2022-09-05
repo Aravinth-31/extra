@@ -1,0 +1,395 @@
+/* plans heading */
+.plans-heading {
+    margin: 0 0 40px;
+  }
+  .plans-heading h5 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: #23282e;
+    margin-bottom: 12px;
+    font-family: "firaSans-semibold";
+  }
+  .plans-heading span {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.32px;
+    color: #23282e;
+  }
+  /* back-arrow */
+.premium-plan {
+    display: flex;
+  }
+  .back-arrow {
+    margin-top: 10px;
+    margin-right: 16px;
+  }
+
+  .organisationdetail {
+    display: flex;
+    justify-content: space-between;
+  }
+  .organisationdetail-left,
+  .organisationdetail-right {
+    width: 48%;
+  }
+
+  @media screen and (max-width:767px) {
+    .organisationdetail{
+      display: block;
+    }
+    .organisationdetail-left,
+  .organisationdetail-right {
+    width: 100%;
+  }
+}
+
+/* for my details updated UI with sidebar */
+.myaccount-wrapper{
+    padding: 3% 5% 3% 5%;
+    background: #fff;
+    min-height: 80vh;
+    margin: -2% -3% 0% 0%;
+    border-radius: 20px;
+  }
+  .organisation-details-wrapper{
+    padding: 3% 5%;
+  }
+  /* */
+  .myaccount-heading h5 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #23282e;
+    font-family: "firaSans-semibold";
+    margin-bottom: 25px;
+  }
+  .organization-details h4.title{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #23282E;
+    font-style: normal;
+    opacity: 0.8;
+  }
+  .organization-details .group{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* font-family: 'Fira Sans'; */
+    font-style: normal;
+  }
+  .organization-details .group .form-group{
+    width: 48%;
+  }
+  .organization-details .group .form-group input{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-style: normal;  
+  }
+  .organization-details hr{
+    color: #000;
+    opacity: 0.3;
+  }
+  .organization-details .details-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .organization-details .details-top .counts h4{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    /* font-family: 'Fira Sans'; */
+    font-style: normal;
+    color: #23282E;
+  }
+  .organization-details .details-top .counts p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16.8px;
+    /* font-family: 'Fira Sans'; */
+    font-style: normal;
+    color: #23282E;
+  }
+  .organization-details .details-top .right{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .organization-details .details-top .right .btn-secondry{
+    width: 200px;
+    margin-left: 20px;
+  }
+  .organization-details .details-top .right .btn-secondry-owner{
+    width: 230px;
+  }
+  /* .organization-details .details-top .right .input-icon{
+    padding: 13px;
+  } */
+  .organization-details .game-table .action-group span,
+  .organization-details .table-responsive .action-group span{
+    margin: 0px 8px;
+    cursor: pointer;
+  }
+  .organization-details .report-table .game-table tbody td{
+    /* padding: 10px 24px; */
+    cursor: auto;
+  }
+  .organization-details .table-responsive .c-white-card{
+    border: 1px solid rgba(0,0,0,0.2);
+  }
+  .organization-details .table-responsive .t-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .organization-details .table-responsive .t-top span.role{
+    /* font-family: "Fira Sans"; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #23282E;
+    opacity: 0.6;
+  }
+  .organization-details .table-responsive .t-top h4{
+    /* font-family: "Fira Sans"; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #23282E;
+  }
+  .organization-details .table-responsive .t-bottom .name{
+    /* font-family: "Fira Sans"; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #23282E;
+  }
+  .organization-details .table-responsive .t-bottom .email{
+    /* font-family: "Fira Sans"; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #23282E;
+  }
+  .organization-details .mobile-view{
+    display: none;
+    margin: 15px 0px;
+  }
+  .account-upload {
+    display: flex;
+    align-items: center;
+    margin-bottom: 42px;
+  }
+  .account-upload .account-profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .account-upload .account-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0 !important;
+  }
+  .account-upload .account-profile-name span{
+    font-size: 13px;
+    line-height: 16px;
+    color: rgb(35 40 46 / 50%);
+    margin-top: 4px;
+    display: flex;
+  }
+  .account-upload .cstm-upload-btn button {
+    margin-top: 8px;
+  }
+  .account-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .account-form .form-group{
+    margin-bottom: 15px;
+  }
+  .account-form .leave-container,
+  .organization-details .leave-container{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .account-form .leave-container hr,
+  .organization-details .leave-container hr{
+    color: #000000;
+    opacity: 0.3;
+  }
+  .account-form .leave,
+  .organization-details .leave{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid rgba(35, 40, 46, 0.16);
+    padding: 20px 15px;
+    border-radius: 8px;
+    align-items: center;
+  }
+  .organization-details .leave-owner{
+    display: block;
+  }
+  .organization-details .leave-owner .btn-group{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .organization-details .leave-owner .btn-group button{
+    padding: 5px 20px;  
+  }
+  .account-form .leave h4,
+  .organization-details .leave h4{
+    /* font-family: "Fira Sans"; */
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    color: #23282E;
+  }
+  .account-form .leave .btn-outline,
+  .organization-details .leave .btn-outline{
+    /* font-family: "Fira Sans"; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    color: #23282E;
+  }
+  .account-form .leave .btn-outline,
+  .organization-details .leave .btn-outline{
+    padding: 5px 20px;
+  }
+  
+  .account-btn-group {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .account-btn-group button,
+  .account-btn-group a {
+    width: 164px;
+    height: 43px;
+    padding: 8px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .account-btn-group button:last-child {
+    margin-right: 0;
+  }
+  .account-form input:hover {
+    background: #e1e6ea;
+    cursor: pointer;
+  }
+  .account-form input{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: #23282E;
+  }
+  .account-form input:focus {
+    background-color: #fff;
+    border: 1px solid #e25569;
+  }
+  @media screen and (max-width: 991px) {
+    .myaccount-wrapper{
+      margin: 0;
+    }
+    .myaccount-heading h5 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .account-upload {
+      margin-bottom: 32px;
+    }
+    .account-btn-group button {
+      /* width: 48%; */
+      max-width: 140px;
+    }
+    .myaccount-wrapper {
+      margin-top: 8px;
+      padding: 4.88%;
+    }
+    .account-btn-group {
+      margin-top: 21px;
+    }
+    .account-btn-group a {
+      margin-right: 0;
+    }
+    .organization-details .details-top .right .btn-secondry{
+      width: 320px;
+    }
+    .organization-details .details-top .right .btn-secondry-owner{
+      width: 190px;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+    .organization-details .details-top .right{
+      width: 200px;
+    }
+    .organization-details .details-top .right .input-icon{
+      padding: 9.5px;
+    }
+    .organization-details .leave-owner .btn-group button{
+      margin: 5px 5px;
+    }
+  }
+  @media  screen and (max-width: 600px) {
+    .organization-details .group{
+      display: block;
+    }  
+    .organization-details .group .form-group{
+      width: 100%;
+    }
+    .organization-details .desk-view{
+      display: none;
+    }
+    .organization-details .mobile-view{
+      display: flex;
+    }
+    .account-form .leave-container .leave{
+      display: block;
+    }
+    .account-form .leave-container .leave button{
+      margin-top: 15px;
+      width: 100%;
+    }
+    .organization-details .leave-container .leave{
+      display: block;
+    }
+    .organization-details .leave-container .leave .btn-outline{
+      width: 100%;
+      margin-top: 20px;
+    }
+    .organization-details .leave-owner .btn-group{
+      margin-top: 0px;
+      border: 0;
+    }
+    .organization-details .leave-owner .btn-group button{
+      margin: 5px 0px;
+    }
+  }
+  

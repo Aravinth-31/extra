@@ -1,0 +1,151 @@
+.g-detail-card {
+  margin-bottom: 30px;
+}
+.g-detail-card:last-child {
+  margin-bottom: 0;
+}
+.g-detail-card h4 {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: #23282e;
+  margin-bottom: 24px;
+}
+.g-detail-card p,
+.g-detail-card li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #6c6c6c;
+}
+.g-detail-card li {
+  line-height: 19px;
+}
+.show-event {
+  color: var(--color-theme);
+  font-weight: 600;
+  display: inline-flex;
+  margin-left: 5px;
+}
+.my-anchor-css-class{
+  color: var(--color-theme);
+  font-weight: 600;
+  display: inline-flex;
+  margin-left: 5px;
+}
+.list-icon li {
+  position: relative;
+  padding-left: 36px;
+  padding-bottom: 15px;
+}
+.list-icon li:last-child {
+  padding-bottom: 0px;
+}
+.list-icon li::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+}
+.g-detail-card.objective .list-icon li::before{
+  top: -3px;
+}
+.list-arrow li::before {
+  background: url("../../assets/images/arrow-red.svg");
+}
+.list-check li::before {
+  background: url("../../assets/images/check-red.svg");
+}
+
+/* org wrapper */
+.org-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.org-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  margin-right: 18px;
+}
+.org-card .org-img {
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+}
+.org-card:last-child {
+  margin-right: 0;
+}
+.org-card .org-img img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+.org-card .org-desc {
+  margin-left: 16px;
+  width: calc(100% - 64px);
+}
+.org-card .org-desc h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.32px;
+  color: #23282e;
+  margin-bottom: 8px;
+}
+.g-detail-card .about-game{
+  text-align: justify;
+}
+.g-detail-card .about-game .show-more-text {
+  color: var(--color-theme);
+  font-weight: 600;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .g-detail-card {
+    margin: 25px 0;
+  }
+  .g-detail-card h4 {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+  }
+  .g-detail-card p,
+  .g-detail-card li {
+    font-size: 14px;
+  }
+  .list-icon li {
+    line-height: 17px;
+    padding-left: 33px;
+  }
+  .org-wrapper {
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-top: 28px;
+  }
+  .org-card {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .org-card .org-img {
+    width: 40px;
+    height: 40px;
+  }
+  .org-card .org-desc h5 {
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    font-weight: normal;
+  }
+  .org-card .org-desc {
+    width: 134px !important;
+    margin: 10px 0 0;
+    min-height: 45px;
+  }
+}

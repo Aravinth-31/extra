@@ -1,0 +1,113 @@
+.cstm-wrapper .checkbox-item {
+  margin-right: 16px;
+  margin-top: 16px;
+  margin-bottom: 0 !important;
+}
+.cstm-wrapper label {
+  line-height: 17px !important;
+  margin-bottom: 8px !important;
+}
+.checkbox-label label {
+  margin-bottom: 0px !important;
+}
+.cstm-wrapper .radio-group .radio-item {
+  margin-right: 40px;
+  margin-bottom: 0 !important;
+}
+.cstm-wrapper input {
+  max-width: 425px;
+}
+.cstm-wrapper .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 450px;
+}
+.radio-label-wrap label {
+  margin-bottom: 16px !important;
+}
+.cstm-wrapper .form-group {
+  margin-bottom: 30px;
+}
+.cstm-wrapper .form-group:last-child {
+  margin-bottom: 0;
+}
+.rule-text li {
+  font-size: 16px;
+  line-height: 19px;
+  color: #23282e;
+  margin-bottom: 15px;
+  list-style-type: decimal;
+  padding-left: 5px;
+  margin-left: 20px;
+}
+.cstm-wrapper .add-new-btn {
+  margin-top: 24px;
+}
+.cstm-wrapper .add-new-btn label {
+  color: #000000;
+}
+.new-rule-card {
+  margin-top: 24px;
+}
+.new-rule-card .form-group textarea {
+  max-width: 660px;
+  height: 80px;
+  background: #ffffff;
+  border: 1px dashed rgba(35, 40, 46, 0.5);
+}
+.btn-grorp-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.btn-grorp-wrapper .okcancel-btn {
+  margin-left: 16px;
+}
+/* progressbar */
+.cstm-progress {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.cstm-progressbar label {
+  font-family: "firaSans-medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 190%;
+  color: #23282e;
+  display: flex;
+  margin-bottom: 20px !important;
+}
+.cstm-progressbar .progressbar-container {
+  width: 285px;
+  height: 10px;
+  background: #f1f1f1;
+  border-radius: 26px;
+}
+.cstm-progressbar .progressbar-progress {
+  background: #e25569 !important;
+  border-radius: 26px;
+}
+
+@media screen and (max-width: 767px) {
+  .cstm-wrapper .form-group {
+    margin-bottom: 24px;
+  }
+  .cstm-wrapper label {
+    margin-bottom: 5px !important;
+  }
+  .cstm-wrapper .radio-group .radio-item {
+    margin-bottom: 10px !important;
+  }
+  .cstm-progress {
+    flex-direction: column-reverse;
+  }
+  .cstm-progress .form-group {
+    margin-bottom: 0;
+  }
+  .cstm-progressbar label {
+    margin-bottom: 20px !important;
+  }
+  .cstm-progressbar .progressbar-container {
+    margin-bottom: 16px;
+  }
+}

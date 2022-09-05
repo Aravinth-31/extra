@@ -1,0 +1,142 @@
+.playgame-heading .profile-section {
+  padding-top: 0;
+  padding-bottom: 43px;
+}
+.playgame-backbtn {
+  display: flex;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+.playgame-backbtn img {
+  margin-right: 16px;
+}
+.playgame-backbtn h5 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #23282e;
+  font-family: "firaSans-medium";
+}
+.playgame-backbtn h5 span {
+  color: #e25569;
+}
+.categoryDropdown button {
+  width: 200px;
+  height: 35px;
+  background: #ffffff;
+  border: 1px solid rgba(35, 40, 46, 0.16);
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  outline: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 16px;
+}
+.categoryDropdown button svg {
+  margin-right: 0;
+}
+.categoryDropdown button span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  font-weight: normal;
+  font-family: "firaSans-regular";
+}
+.categoryDropdown .dropdown-menu {
+  max-height: 285px;
+  overflow: auto;
+  display: none;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+}
+.categoryDropdown  .dropdown-menu{
+  overflow: auto;
+  overflow-x: hidden;
+}
+.categoryDropdown  .dropdown-menu::-webkit-scrollbar{
+  width: 5px;  
+}
+.categoryDropdown  .dropdown-menu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.categoryDropdown  .dropdown-menu::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.categoryDropdown  .dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
+
+.categoryDropdown .dropdown-menu .dropdown-item{
+  padding: 8px 10px ;  
+  width: 200px;
+}
+.categoryDropdown .dropdown-menu .dropdown-item:hover{
+  background: #f2f2f2;
+}
+.categoryDropdown button:hover{
+  background: transparent;
+}
+.dropdown-menu.show{
+  display: block;
+  top: 8px !important;
+}
+.show-all.no-data{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.show-all.no-data h4{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #23282E;
+  opacity: 0.5;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .playgame-heading {
+    margin-top: 8px;
+  }
+  .categoryDropdown {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .categoryDropdown button {
+    width: 100%;
+    height: 50px;
+  }
+  .playgame-heading .profile-section {
+    padding-bottom: 24px;
+  }
+  .playgame-backbtn h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .playgame-backbtn {
+    margin-bottom: 16px;
+  }
+  .categoryDropdown .dropdown-menu {
+    width: calc(100% - 30px);
+    max-height: 285px;
+    overflow: auto;
+  }
+}
+@media screen and (max-width:767px) {
+  .show-all.no-data h4{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:500px) {
+  .show-all.no-data{
+    height: 50px;
+  }
+  .show-all.no-data h4{
+    font-size: 14px;
+  }  
+}

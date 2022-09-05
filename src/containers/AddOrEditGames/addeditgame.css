@@ -1,0 +1,132 @@
+.add-game-container{
+    padding:2% 5%;
+    background: #fff;
+    border-radius: 10px;
+    min-height: 80vh;
+}
+.add-game-container .title{
+    font-size: 30px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    color: #23282e;;
+    font-size: 24px;
+    line-height: 22px;
+    text-transform: capitalize;
+    font-family: "firaSans-semibold";
+    font-weight: 600;    
+}
+.add-game-container form{
+    margin-top: 30px;
+}
+.add-game-container form .flex-box{
+    display: flex;
+    justify-content: space-between;
+}
+.add-game-container form .flex-box .form-group:nth-child(2){
+    align-items: flex-end;
+}
+.add-game-container form .flex-box .form-group:nth-child(2) .error-message{
+    left: 20%;
+}
+.add-game-container form .form-group{
+    width: 100%;
+}
+.add-game-container form .form-group input,
+.add-game-container form .form-group label{
+    width: 80%;
+}
+.add-game-container form .form-group textarea{
+    height: 100px;
+    width: 80%;
+}
+.add-game-container form .form-group .form-select{
+    width: 80%;
+}
+.add-game-container form .form-group .form-select .react-select__control, 
+.add-game-container form .form-group .form-select .react-select__control--is-focused, 
+.add-game-container form .form-group .form-select .react-select__value-container{
+    height: unset !important;
+}
+.add-game-container form .btn{
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+}
+.add-game-container .cstm-upload-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.add-game-container .cstm-upload-btn .btn-remove{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.add-game-container .cstm-upload-btn .btn-remove.disabled{
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.add-game-container .flex-box .cstm-upload-btn{
+    width: 80%;
+}
+.add-game-container .flex-box .cstm-upload-btn + .error-message{
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #23282e;
+    bottom: -12px;
+}
+.add-game-container .flex-box .cstm-upload-btn .upload-btn{
+    width: 100%;
+}
+.add-game-container .cstm-upload-btn .upload-btn{
+    width: 150px;
+    height: 40px;
+    padding:10px 15px;
+}
+.add-game-container ul.uploaded-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 10px;
+    margin:-10px 0 20px;
+}
+.add-game-container ul.uploaded-images li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: linear-gradient(90deg, rgba(233,240,125,1) 0%, rgba(150,245,52,1) 55%, rgba(57,240,244,1) 100%); */
+    background: linear-gradient(90deg, rgba(255,181,192,1) 0%, rgba(235,114,131,1) 100%);
+    padding: 10px;
+    border-radius: 20px 0px;
+    width: fit-content;
+}
+.add-game-container ul.uploaded-images li span.close{
+    cursor: pointer;
+    margin-left: 20px;
+}
+@media screen and (max-width:500px) {
+    .add-game-container{
+        padding: 3% 5%;
+        margin: 0 -6%;
+        border-radius: 0;
+    }
+    .add-game-container form .flex-box{
+        flex-direction: column;
+    }
+    .add-game-container form .form-group input, 
+    .add-game-container form .form-group label,
+    .add-game-container form .form-group textarea,
+    .add-game-container form .form-group .form-select{
+        width: 100%;
+    }
+    .add-game-container form .flex-box .form-group:nth-child(2) .error-message{
+        left: 0;
+    }
+    .add-game-container .flex-box .cstm-upload-btn{
+        width: 100%;
+    }    
+    .add-game-container .flex-box .cstm-upload-btn + .error-message{
+        width: 100%;
+    }
+}

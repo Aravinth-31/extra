@@ -1,0 +1,15 @@
+.manageteam-wrapper{
+    padding: 2% 5%;
+    background: #fff;
+    min-height: 80vh;
+    margin: -2% -3% 0% 0%;
+    border-radius: 20px;
+}
+.manageteam-wrapper .plandetail-premium  h5{
+    margin: 0 0 10px;
+}
+@media screen and (max-width:991px) {
+    .manageteam-wrapper .cg-tabs.databse-tabs .react-tabs__tab--selected{
+        color: var(--color-theme);
+    }        
+}

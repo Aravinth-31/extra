@@ -1,0 +1,36 @@
+.analytics-card{
+    background: #F8F9FD;
+    display: block;
+    width: fit-content;
+    min-width: 280px;
+    padding: 25px 25px 25px 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    margin-right: 40px;    
+    box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 0.05);
+    border: 2px solid rgba(0,0,0,0.1);
+}
+.analytics-card .title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #23282e;
+    text-transform: capitalize;
+}
+.analytics-card .value{
+    font-size: 60px;
+    font-weight: 600;
+    /* line-height: 60px; */
+    color: #23282e;
+    display: flex;
+    justify-content: flex-end;
+}
+@media screen and (max-width: 770px) {
+    .analytics-card{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 25px;
+    }
+}

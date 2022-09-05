@@ -1,0 +1,36 @@
+.filter-body{
+    width: 480px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+.filter-body form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filter-body form .form-group{
+    width: 100%;
+}
+.filter-body form .btn{
+    width: 100px;
+    padding: 10px;
+}
+.filter-body form .group{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin:10px 0 28px;
+    align-items: center;
+}
+.filter-body form .group .form-group{
+    margin: 0;
+}
+.filter-body form label{
+    width: 100%;
+}

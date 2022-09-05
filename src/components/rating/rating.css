@@ -1,0 +1,62 @@
+.game-rating{
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+.game-rating h6{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.32px;
+  color: #23282E;
+  margin-right: 10px;
+}
+.game-rating span{
+  font-size: 14px;
+  line-height: 17px;
+  color: #6C6C6C;
+  margin-right: 30px;
+  position: relative;
+}
+.game-rating span::before{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  right: -14px;
+  top: 8px;
+  background: #23282E;
+  border-radius: 100%;
+}
+/* game rating */
+.game-rating svg{
+  width: 16px !important;
+  height: 16px !important;
+}
+/* diy text */
+.diy-text{
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #23282E;
+}
+.diy-text .diy-img{
+  cursor: pointer;
+}
+.game-rating .star-ratings{
+  margin-right: 14px;
+}
+.game-rating .star-container{
+  padding: 0 2px !important;
+}
+@media screen and (max-width: 991px){
+  .game-rating{
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .game-rating span{
+    margin-right: 24px;
+  }
+}

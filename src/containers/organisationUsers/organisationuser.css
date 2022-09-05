@@ -1,0 +1,95 @@
+.organisation-users{
+    background: #fff;
+    padding: 3% 5% 2%;
+    border-radius: 20px;
+    margin-right: -3%;
+}
+.organisation-users .teams-search{
+    align-items: center;
+}
+.organisation-users .back-arrow{
+    margin: 0 20px 0 0;    
+}
+.organisation-users .action-group span{
+    margin:0;
+}
+.organisation-users .orgDetails-actions{
+    border: 0;
+}
+.organisation-users .team-table tbody td{
+    padding: 0px 24px;
+}
+.organisation-users .orgDetails-actions .view-btn.delete{
+    width: 30px;
+    height: 30px;
+    padding: 5px 5px;
+}
+/* slider part */
+.organisation-users  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+.organisation-users  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.organisation-users .btn-tooltip{
+    margin: 0;
+}
+.organisation-users  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 4px;
+}
+.organisation-users  .disabled{
+    cursor: not-allowed !important;
+}
+.organisation-users  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}  
+.organisation-users  input:checked + .slider {
+    background-color: #2AB070;
+}
+.organisation-users  input:focus + .slider {
+    box-shadow: 0 0 1px #2AB070;
+}
+.organisation-users  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+  /*slider end*/
+
+
+@media screen and (max-width:991px) {
+    .organisation-users{
+        margin: 0;
+        background: transparent;
+        padding: 0 3% 2%;
+        border-radius: 0px;
+    }
+    .organisation-users .back-arrow{
+        margin-bottom: 20px;
+        margin-top: -15px;
+    }
+}

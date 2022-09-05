@@ -1,0 +1,120 @@
+.banner-upload-card{
+    padding:0px 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.banner-upload-card.desktop{
+    display: flex;
+}
+.banner-upload-card.mobile{
+    display: none;
+}
+.banner-upload-card .upload-button{
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 14px;
+    background: rgba(226,85,105,0.1);
+}
+.banner-upload-card .upload-button input{
+    display: none;    
+}
+.banner-upload-card .upload-button span{
+    font-size: 14px;
+    line-height: 17px;
+    color: #e25569;
+    display: flex;
+}
+.banner-upload-card .form-group{
+    margin: 0;
+    width: 96%;
+    margin:  0 2%;
+}
+.banner-upload-card .form-group input{
+    background: #f0f1f5;
+}
+.banner-upload-card .btn span.desktop{
+    display: inherit;
+}
+.banner-upload-card .btn span.mobile{
+    display: none;
+}
+.banner-upload-card .envelope{
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    cursor: not-allowed;
+}
+.banner-upload-card .disabled{
+    cursor: not-allowed;
+}
+.banner-upload-card .cstm-upload-btn{
+    position: relative;
+    width: 80%;
+    margin: 0 1%;
+}
+.banner-upload-card .cstm-upload-btn .hide{
+    visibility: hidden;
+    display: inline-flex !important;
+}
+.banner-upload-card .uploaded-img{
+    position: absolute;
+    bottom: -18px;
+    font-size: 12px;
+    
+    /*overflow  ellipsis*/
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+.banner-upload-card .btn img{
+    margin: 0;
+}
+.banner-upload-card .btn .btn-primary{
+    width: 45px;
+    height: 45px;
+}
+.banner-upload-card p.index{
+    width: 50%;
+    margin: 0 1%;
+}
+
+.banner-upload-card.mobile{
+    justify-content: flex-start;
+    padding: 5px 0 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.banner-upload-card.mobile p.index{
+    width: 90px;
+}
+.banner-upload-card.mobile .parent{
+    width: 100%;
+}
+.banner-upload-card.mobile .parent .child1,
+.banner-upload-card.mobile .parent .child2{
+    display: flex;
+}
+.banner-upload-card.mobile .child1{
+    margin: 10px 0 25px;
+}
+@media screen and (max-width:991px) {
+    .banner-upload-card .btn span.desktop{
+        display: none;
+    }
+    .banner-upload-card .btn span.mobile{
+        display: inherit;
+    }        
+}
+@media screen and (max-width:500px) {
+    .banner-upload-card.desktop{
+        display: none;
+    }
+    .banner-upload-card.mobile{
+        display: flex;
+    }
+}

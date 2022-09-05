@@ -1,0 +1,146 @@
+.webinar-container{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.webinar-container .title{
+    font-weight: bold;
+    padding: 10px 3px 0px;
+}
+.webinar-container .count-container{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    margin: -20px auto 10px;
+    align-items: center;
+}
+.webinar-container .count-container h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.webinar-container .count-container .btn{
+    margin-right:0;
+}
+.webinar-container form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background: #fff;
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+.webinar-container form h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.webinar-container form .group{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.webinar-container form .group .form-group{
+    width: 45%;
+    flex-direction: column;
+}
+.webinar-container form .group .form-group input.form-field,
+.webinar-container form .group .form-group textarea.form-field{
+    width: 100%;
+}
+.webinar-container form .form-group input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}
+.webinar-container form .form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.webinar-container .form-group .error-message{
+    right: 0;
+    bottom: -15px;
+}
+.webinar-container .form-group .error-message.uploaded-info{
+    color: inherit;
+}
+.webinar-container form .form-group input.form-field,
+.webinar-container form .form-group textarea.form-field,
+.webinar-container form .form-group .form-select{
+    width: 45%;
+}
+.webinar-container textarea.form-field{
+    height: 100px;
+}
+.webinar-container .cstm-upload-btn{
+    display: flex;
+    flex-direction: column;
+}
+.webinar-container .upload-button{
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 14px;
+    background: rgba(226,85,105,0.1);
+}
+.webinar-container .upload-button input{
+    display: none;    
+}
+.webinar-container .upload-button span{
+    font-size: 14px;
+    line-height: 17px;
+    color: #e25569;
+    display: flex;
+}
+.webinar-container .btn{
+    margin: 0 10px;
+    min-width: 100px;
+    padding: 10px 20px;
+}
+@media screen and (max-width:888px) {
+    .webinar-container .btn-group{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }        
+    .webinar-container .btn-group .btn{
+        width: 100%;
+        margin: 0 0 10px;
+    }
+}
+@media screen and (max-width:767px) {
+    .webinar-container form{
+        width: 100%;
+        padding: 20px;
+    }
+    .webinar-container .count-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:500px) {
+    .webinar-container form .form-group{
+        flex-direction: column;
+    }
+    .webinar-container form .form-group input.form-field,
+    .webinar-container form .form-group textarea.form-field{
+        width: 100%;
+    }
+    .webinar-container .form-group .error-message{
+        left: 0;
+    }
+    .webinar-container .count-container{
+        margin: 0 auto 0;
+        justify-content: space-between;
+        padding: 10px 0 ;
+    }
+    .webinar-container .count-container h4{
+        font-size: 14px;
+    }
+    .webinar-container .count-container .btn{
+        padding: 8px 10px;
+    }
+}

@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "email": "jessica.hanson@example.com",
+      "firstName": "Jane",
+      "lastName": "Cooper",
+      "role": "ORG_SUPER_ADMIN",
+      "Role":"Owner"
+    },
+    {
+      "email": "deanna.curtis@example.com",
+      "firstName": "Jerome",
+      "lastName": "Bell",
+      "role": "ORG_SUPER_ADMIN",
+      "Role":"Owner"
+    },
+    {
+      "email": "nathan.roberts@example.com",
+      "firstName": "Courtney",
+      "lastName": "Henry",
+      "role": "ORG_ADMIN",
+      "Role":"Admin"
+    },
+    {
+      "email": "tim.jennings@example.com",
+      "firstName": "Jenny",
+      "lastName": "Wilson",
+      "role": "ORG_ADMIN",
+      "Role":"Admin"
+    },
+    {
+      "email": "sara.cruz@example.com",
+      "firstName": "Dianne",
+      "lastName": "Russell",
+      "role": "EMPLOYEE",
+      "Role":"User"
+    },
+    {
+      "email": "debbie.baker@example.com",
+      "firstName": "Kathryn",
+      "lastName": "Murphy",
+      "role": "EMPLOYEE",
+      "Role":"User"
+    },
+    {
+      "email": "nevaeh.simmons@example.com",
+      "firstName": "Esther",
+      "lastName": "Howard",
+      "role": "EMPLOYEE",
+      "Role":"User"
+    },
+    {
+      "email": "tanya.hill@example.com",
+      "firstName": "Guy",
+      "lastName": "Hawkins",
+      "role": "EMPLOYEE",
+      "Role":"User"
+    },
+    {
+      "email": "alma.lawson@example.com",
+      "firstName": "Ralph",
+      "lastName": "Edwards",
+      "role": "EMPLOYEE",
+      "Role":"User"
+    }
+  ]
+}

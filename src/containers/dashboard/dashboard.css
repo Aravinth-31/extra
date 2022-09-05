@@ -1,0 +1,654 @@
+.btn.btn-primary {
+  position: unset;
+}
+hr.seperator {
+  font-size: 10px;
+  transform: scaleY(1.5);
+  font-weight: bold;
+  margin: 20px 0px;
+  opacity: 0.7;
+}
+.banner-section .banner-edit {
+  user-select: none;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 16px; 
+    padding: 0 0 20px;
+}
+.banner-section .input-icon{
+  width: 335px;
+  padding-right: 0px;
+}
+.no-data-home{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.no-data-home h4{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #23282E;
+  opacity: 0.5;
+  text-align: center;
+}
+
+
+/* for admin panel button group*/
+.admin-dashboard-btn-group{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.admin-dashboard-btn-group .group-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "firaSans-semibold";
+  font-size: 18px;
+  color: #e25569;
+  border: 1px solid #e25569;
+  /* background: white; */
+  cursor: pointer;
+}
+.admin-dashboard-btn-group .group-item.disabled{
+  cursor: not-allowed;
+}
+.admin-dashboard-btn-group .active{
+  color: white;
+  background: linear-gradient(85.42deg, #e25569 0%, #fb9946 100%);
+}
+.admin-homepage .add-save{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  flex-direction: unset;
+}
+.admin-homepage .add-save button.btn{
+  height: 40px;
+  width: 120px;
+}
+
+/* slogans list */
+.banner-editor div.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slogans-list{
+  padding: 20px 0;
+}
+li.slogans-item{
+  list-style-type: disclosure-closed;
+  padding: 15px;
+  list-style-position: inside;
+  background: #fff;
+  border-radius: 5px;  
+  margin:10px 0;
+  cursor: grab;
+}
+li.slogans-item:nth-child(odd)::marker{
+  color:rgb(160,160,190);
+}
+li.slogans-item:nth-child(even)::marker{
+  color: rgb(0,200,200);
+}
+.slogans-item span{
+  line-height: 35px;
+}
+.slogans-item .btn img{
+  margin: 0;
+}
+.slogans-item .btn span.desktop{
+  display: block;
+}
+.slogans-item .btn svg.mobile,
+.slogans-item .btn img.mobile{
+  display: none;
+}
+.slogans-item .btn{
+  float: right;
+  height: 35px;
+  width: 80px;
+  margin-left: 10px;
+  color: #fff;
+  border-radius: 35px;
+}
+.slogans-item .btn:hover{
+  box-shadow: 0px 8px 24px 2px rgba(0, 0, 0, 0.16);
+}
+.slogans-item .btn.btn-edit{
+  background: rgb(160,160,190);
+}
+.slogans-item .btn.btn-delete{
+  background: linear-gradient(85.42deg, rgb(0,200,215) 0%, rgb(0,220,190) 100%);
+  /* background: rgb(0,200,200); */
+}
+.banner-editor div.add-slogan{
+  display: flex;
+  justify-content: center;
+}
+.banner-editor .btn.btn-add-slogan{
+  background: linear-gradient(85.42deg, rgb(0,200,215) 0%, rgb(0,220,190) 100%);
+  height: 40px;
+  color: #fff;
+  margin: auto;
+}
+.banner-editor .btn:hover{
+  box-shadow: 0px 8px 24px 2px rgba(0, 0, 0, 0.16);
+}
+
+/**/
+
+.banner-section .banner-edit .banner-item {
+  /* background-color: aqua; */
+  border-radius: 10px;
+  position: relative;
+}
+
+.banner-editor h1 {
+  font-weight: bold;
+  padding: 10px 3px;
+}
+
+.banner-edit .banner-item .container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.banner-edit .banner-item.add .container{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100%;
+}
+.banner-edit .banner-item.add .container img{
+  position: relative;
+  width: 100px;
+  height: 120px;
+  left: inherit;
+  top: inherit;
+}
+.banner-edit .banner-item .container .btn-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: inherit;
+  padding: 5px 8px;
+}
+.banner-edit .banner-item .container .btn-primary,
+.show-all-modal .container .btn-group .btn-primary,
+.add-game-in-slogan-modal .container .btn-group .btn-primary {
+  padding: 5px 8px;
+  font-weight: bolder;
+}
+.banner-edit .banner-item .container .btn-primary img {
+  width: 100%;
+  height: 100%;
+  padding: 10% 5%;
+}
+.sortable-list .Add {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* position: absolute; */
+  /* top: 0;
+    left: 0; */
+  opacity: 0.6;
+  padding: 20% 32%;
+  border-radius: 10px;
+}
+.admin-save {
+  display: flex;
+  justify-content: flex-end;
+}
+.banner-edit .banner-item .container .name {
+  color: white;
+  font-weight: bolder;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 15px;
+  font-size: 150%;
+  z-index: inherit;
+}
+.banner-edit .banner-item .container .name span {
+  /* background: -webkit-linear-gradient(rgb(99, 0, 0), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "firaSans-semibold";
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.banner-edit .banner-item .Add img {
+  cursor: pointer;
+  width: 30%;
+  height: 40%;
+  left: 35%;
+  top: 30%;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+/*Upload banner*/
+
+.banner-upload{
+  padding: 0 0 60px;
+}
+.banner-upload .banner-grp-title{
+  display: flex;
+  justify-content: space-evenly;  
+  margin-bottom: 20px;
+}
+.banner-upload .banner-grp-title p{
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.banner-upload .banner-grp-title p span.size{
+  position: absolute;
+  bottom: -5px;
+  font-size: 12px;
+  color: #f2545b;
+}
+.banner-upload .banner-grp-title .head1,
+.banner-upload .banner-grp-title .head5{
+  visibility: hidden;
+}
+.banner-upload .banner-grp-title .head1{
+  width: 50%;
+  margin: 0 1%;
+}
+.banner-upload .banner-grp-title .head2,
+.banner-upload .banner-grp-title .head3{
+  width: 70%;
+  margin: 0 1%;
+}
+.banner-upload .banner-grp-title .head4{
+  width: 96%;
+  margin: 0 2%;
+}
+.banner-upload .banner-grp-title .head5{
+  width: 45px;
+  height: 45px;
+}
+.banner-upload .btn-grp{
+  display: flex;
+  justify-content: center;
+}
+.banner-upload .preview{
+  margin-top: -30px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #e25569;
+}
+.banner-upload .preview:hover{
+  font-weight: 600;
+}
+.banner-upload .preview .dropdown-arrow{
+  display: inline-flex;
+  height: 10px;
+  transition: all ease 500ms;
+}
+.banner-upload .preview .dropdown-arrow.rotate{
+  transform: rotate(180deg);
+}
+
+/*Banner Create modal */
+.banner-create-modal,
+.banner-delete-modal,
+.add-game-in-slogan-modal,
+.confirm-slogan-sort-modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.banner-create-modal .btn-group
+.banner-delete-modal .btn-group,
+.add-game-in-slogan-modal .btn-group,
+.confirm-slogan-sort-modal .btn-group,
+.banner-item .btn-group,
+.show-all-modal .btn-group
+  {
+  flex-direction: unset;
+}
+
+.banner-create-modal .container,
+.add-game-in-slogan-modal .container {
+  background-color: white;
+  width: 600px;
+  min-height: 300px;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.banner-delete-modal .container,
+.confirm-slogan-sort-modal .container {
+  background-color: white;
+  width: 600px;
+  min-height: 100px;
+  border-radius: 20px;
+  padding: 15px 60px;
+}
+.show-all-modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding:8% 7% 5%;
+  overflow-y: hidden;
+  z-index: 10;
+}
+.show-all-modal .container {
+  background-color: #eef0f1;
+  width: 100%;
+  min-height: 530px;
+  border-radius: 20px;
+  padding: 15px 20px;
+  overflow-y: auto;
+  z-index: 1;
+}
+.show-all-modal .show-all-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.show-all-modal .show-all-title .back-arrow{
+  position: absolute;
+  left: 0;
+  margin-top: 0;
+}
+.back-arrow{
+  cursor: pointer;
+}
+.show-all-modal .container .btn-group,
+.add-game-in-slogan-modal .container .btn-group {
+  display: flex !important;
+  justify-content: flex-end;
+}
+.show-all-modal .container .title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #e25569;
+}
+.show-all-modal .container .show-all-items {
+  margin: 10px 0px;
+}
+.banner-delete-modal .container span,
+.confirm-slogan-sort-modal .container span {
+  font-size: 20px;
+}
+.banner-delete-modal .container .btn-group,
+.confirm-slogan-sort-modal .container .btn-group {
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+.banner-create-modal .container .close,
+.drag-item .close {
+  display: flex;
+  justify-content: flex-end;
+}
+.banner-create-modal .container .close span ,
+.drag-item .close span{
+  font-size: 28px;
+  font-weight: 900;
+  cursor: pointer;
+  background: -webkit-linear-gradient(rgb(255, 115, 0), rgb(255, 134, 35));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-create-modal .container .form,
+.add-game-in-slogan-modal .container .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-game-in-slogan-modal .container .form {
+  padding: 10%;
+}
+.banner-create-modal .container .form .group,
+.add-game-in-slogan-modal .container .form .group {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.banner-create-modal .container .form .form-control,
+.add-game-in-slogan-modal .container .form .form-control {
+  width: 100%;
+  margin: 10px;
+}
+.banner-create-modal .container .form .select,
+.add-game-in-slogan-modal .container .form .select {
+  margin-bottom: 28px;
+  min-width: 300px;
+  position: relative;
+}
+
+.slick-list > .slick-track {
+  margin-left: initial;
+  display: flex;
+}
+
+.slick-list{
+  overflow: initial !important;
+}
+
+
+.error-message {
+  color: #f2545b;
+  font-family: "firaSans-regular";
+  font-style: inherit;
+  font-weight: 100;
+  font-size: 10px;
+}
+.info-message {
+  color: #547ef2;
+  font-family: "firaSans-regular";
+  font-style: inherit;
+  font-weight: 100;
+  font-size: 15px;
+}
+.drag-message{
+  color: #f2545b;
+  font-family: "firaSans-regular";
+  font-style: inherit;
+  font-weight: 100;
+  font-size: 13px;
+}
+/* upload csv section */
+.upload-csv-section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  background: #FFEDEF;
+}
+.upload-csv-title{
+  display: flex;
+  align-items: center;
+}
+.upload-csv-section h5{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #23282E;
+  margin-left: 12px;
+  margin-right: 4px;
+}
+.upload-csv-butn{
+  display: flex;
+  align-items: center;
+}
+.upload-csv-butn img{
+  margin-right: 24px;
+}
+.upload-csv-section button{
+  width: 79px;
+  height: 22px;
+  background: #E25569;
+  border-radius: 4px;
+  border: 0px solid;
+  outline: 0;
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: 'firaSans-medium';
+}
+/* Slogan Card css */
+@media screen and (max-width: 991px) {
+  .banner-edit .banner-item{
+    height: 160px;
+  }
+  .admin-dashboard-btn-group{
+    margin-bottom: -20px;
+  }
+  .admin-dashboard-btn-group .group-item{
+    padding: 13px;
+    font-size: 17px;
+  }
+  .show-all-modal{
+    padding: 65px 0 0;
+  }
+  .show-all-modal .container{
+    border-radius: 0;
+    background: #fff;
+    padding: 0 20px;
+  }
+  .show-all-modal .show-all-title{
+    padding: 20px 0 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .upload-csv-section{
+    flex-direction: column;
+    height: 76px;
+  }
+  .upload-csv-section h5{
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .upload-csv-butn img {
+    margin-right: 12px;
+  }
+  .upload-csv-butn{
+    margin-top: 8px;
+  }
+  .admin-dashboard-btn-group .group-item{
+    padding: 10px;
+    font-size: 16px;
+  }
+  .admin-homepage .add-save{
+    justify-content: space-between;
+  }
+  .admin-homepage .add-save button.btn{
+    width: 100%;
+  }
+  .banner-edit .banner-item.add .container img{
+    height: 100px;
+    width: 80px;
+  }
+  .no-data-home h4{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 680px){
+  .admin-dashboard-btn-group{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+  }
+  .admin-dashboard-btn-group .group-item{
+    width: 100%;
+  }
+  .drag-item .close span{
+    font-size: 25px;
+  }
+  .show-all-modal .container{
+    padding: 0 35px;
+  }
+  .show-all-modal .show-all-title{
+    margin: 0 -15px;
+  }
+  .banner-edit .banner-item.add .container img{
+    height: 70px;
+    width: 60px;
+  }
+.slogans-item .btn{
+    width: 40px;
+    border-radius: 5px;
+  }
+.slogans-item .btn svg{
+    margin: 0;
+  }
+.slogans-item .btn span.desktop{
+    display: none;
+  }
+.slogans-item .btn svg.mobile,
+.slogans-item .btn img.mobile{
+    display: flex;
+  }  
+}
+@media screen and (max-width:500px) {
+  .no-data-home{
+    height: 50px;
+  }
+  .no-data-home h4{
+    font-size: 14px;
+  }  
+  .banner-grp-title .head4{
+    display: none !important;
+  }
+  .banner-upload .preview{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }  
+}
+@media screen and (max-width:400px) {
+  .drag-item .close span{
+    font-size: 20px;
+  }
+  .banner-editor div.head{
+    display: block;
+  }
+}

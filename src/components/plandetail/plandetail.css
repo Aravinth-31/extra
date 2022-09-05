@@ -1,0 +1,320 @@
+.plandetail-premium h5 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #23282e;
+  margin: 0 0 24px;
+}
+.disabled{
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+/* premium card */
+.plandetail-premium-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(35, 40, 46, 0.16);
+  border-radius: 10px;
+  padding: 24px 36px 24px 26px;
+}
+.pc-upgrade-plan {
+  display: flex;
+  align-items: center;
+}
+.premium-card-top,
+.premium-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.premium-card-top {
+  margin-bottom: 16px;
+}
+.pc-upgrade-plan h4 {
+  font-family: "firaSans-medium";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: #23282e;
+  margin-right: 23px;
+}
+.pc-upgrade-plan button {
+  width: 140px;
+  padding: 0;
+  height: 43px;
+}
+.pc-ammount h3 {
+  font-family: "firaSans-semibold";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.32px;
+  color: #23282e;
+  margin-bottom: 4px;
+}
+.pc-ammount h3 span {
+  font-family: "firaSans-medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #23282e;
+  margin-right: 4px;
+}
+.pc-ammount span {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.32px;
+  color: rgb(35 40 46 / 60%);
+}
+/* next bill amount */
+.manage-nextpayment {
+  display: flex;
+}
+.next-payment span {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.32px;
+  color: #7b7e82;
+}
+.next-payment h4 {
+  font-family: "firaSans-medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.32px;
+  color: #23282e;
+}
+.payment-plan-btn {
+  width: 164px;
+  height: 43px;
+  font-family: "firaSans-medium";
+  font-weight: 500;
+  background: rgba(226, 85, 105, 0.1);
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #e25569;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px solid transparent;
+  margin-left: 60px;
+  cursor: pointer;
+  outline: 0;
+}
+.manage-nextpayment .btn-primary{
+  margin-left: 60px;
+  height: 40px;
+  width: 120px;
+}
+/* progressbar */
+.premium-progressbar .progressbar-container {
+  width: 240px;
+  height: 8px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+.premium-progressbar .progressbar-progress {
+  height: 8px;
+  background-color: var(--color-theme) !important;
+  border-radius: 10px;
+}
+/* transaction table */
+.transaction-table-sect {
+  margin-top: 40px;
+}
+.transaction-table-sect thead th {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #23282e;
+  opacity: 0.8;
+  font-family: "firaSans-medium";
+  padding-left: 26px;
+}
+.transaction-table-sect h4 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #23282e;
+  font-family: "firaSans-semibold";
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.trans-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.download-btn {
+  width: 24px;
+  height: 24px;
+  background: var(--color-theme_1);
+  border-radius: 4px;
+  padding: 0;
+  border: 0px solid transparent;
+  cursor: pointer;
+}
+.download-btn img {
+  margin: 0;
+}
+.plandetail-wrapper{
+  padding: 3.5% 5%;
+  background: #fff;
+  min-height: 80vh;
+  margin: -2% -3% 0% 0%;
+  border-radius: 20px;
+}
+.plandetail-card{
+  max-width: 1160px;
+}
+.pc-upgrade-plan button{
+  height: 40px;
+  width: 140px;
+}
+@media screen and (max-width: 991px) {
+  .plandetail-premium h5 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+  }
+  /* premium card */
+  .plandetail-premium-card {
+    position: relative;
+    padding: 16px;
+  }
+  .premium-card-top {
+    margin-bottom: 12px;
+  }
+  .premium-card-bottom,
+  .manage-nextpayment {
+    flex-direction: column;
+    width: 100%;
+  }
+  .pc-upgrade-plan h4 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .pc-upgrade-plan {
+    align-items: flex-start;
+  }
+  .pc-ammount h3 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0%;
+  }
+  .pc-ammount span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .plandetail-premium-card button {
+    width: 46%;
+    height: 33px;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+  }
+  .pc-upgrade-plan button {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    height: 40px;
+    width: 124px;
+  }
+  /* progessbard */
+  .premium-progressbar {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .premium-progressbar span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .premium-progressbar .progressbar-container {
+    margin-top: 8px;
+    width: 100%;
+  }
+  .premium-progressbar .progressbar-progress {
+    height: 8px !important;
+  }
+  /* bill */
+  .next-payment {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  .next-payment span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .next-payment h4 {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 4px;
+  }
+
+  /* table responsive */
+  .transaction-table-sect {
+    margin-top: 24px;
+  }
+  .transaction-table-sect h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #23282e;
+    font-family: "firaSans-semibold";
+  }
+  .m-transacton-table .c-white-card {
+    margin-top: 16px;
+    box-shadow: none;
+  }
+  .trans-m-card {
+    padding: 16px !important;
+    margin-top: 16px;
+    border: 1px solid rgba(35, 40, 46, 0.16);
+    box-shadow: none;
+    margin-bottom: 0 !important;
+  }
+  .trans-m-top,
+  .trans-m-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  .trans-m-top h5 {
+    font-size: 16px;
+    line-height: 19px;
+    color: #23282e;
+    margin: 0;
+    font-family: "firaSans-regular";
+    font-weight: normal;
+  }
+  .trans-m-top span {
+    font-size: 12px;
+    line-height: 14px;
+    color: #23282e;
+  }
+  .trans-m-top h4 {
+    font-size: 16px;
+    line-height: 19px;
+    color: #23282e;
+    font-family: "firaSans-medium";
+    font-weight: 500;
+  }
+  .trans-m-top {
+    margin-bottom: 10px;
+  }
+  .trans-m-bottom span {
+    font-size: 14px;
+    line-height: 17px;
+    color: #23282e;
+  }
+  .manage-nextpayment .btn-primary{
+    margin-left: 0;
+    height: 40px;
+    width: 124px;
+  }
+  .manage-nextpayment .btn-tooltip{
+    width: 124px;
+  }
+}

@@ -1,0 +1,91 @@
+.ssoadminpage {
+    min-height: 85vh;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2% 5%;
+}
+
+.ssoadminpage form {
+    display: flex;
+    flex-direction: column;
+    width: min(90%, 500px);
+    margin: 30px auto;
+}
+
+.ssoadminpage .title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #23282e;
+    ;
+    font-size: 24px;
+    line-height: 22px;
+    text-transform: capitalize;
+    font-family: "firaSans-semibold";
+    font-weight: 600;
+}
+
+.ssoadminpage .upload-button {
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 14px;
+    background: rgba(226, 85, 105, 0.1);
+}
+
+.ssoadminpage .upload-button input {
+    display: none;
+}
+
+.ssoadminpage .upload-button span {
+    font-size: 14px;
+    line-height: 17px;
+    color: #e25569;
+    display: flex;
+}
+
+.ssoadminpage .uploaded-img {
+    position: absolute;
+    bottom: -18px;
+    font-size: 12px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ssoadminpage .react-multi-email {
+    padding: 0;
+    border: 0;
+}
+
+.ssoadminpage .react-multi-email > input {
+    width: 100% !important;
+    padding: 10px 12px !important;
+}
+
+.ssoadminpage .react-multi-email.empty > span[data-placeholder] {
+    color: unset;
+    opacity: 0.5;
+}
+
+.ssoadminpage .react-multi-email > input:focus {
+    outline: none !important;
+    border: 1px solid #23282e !important;
+}
+
+.ssoadminpage .form-group.check-box{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.ssoadminpage .form-group.check-box input{
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width:500px) {
+    .ssoadminpage .form-group.check-box input{
+        width: 25px;
+    }
+}

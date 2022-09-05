@@ -1,0 +1,544 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+.add-user-wrapper .employedata-csvcard{
+    border: 1px solid rgba(35, 40, 46, 0.16);
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 24px;
+    margin: 24px 0 0px;
+}
+.employedata-csvfile{
+    display: flex;
+}
+
+.add-user-wrapper .single-user-add{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px 0px;
+}
+.add-user-wrapper .single-user-add .left h4,
+.add-user-wrapper .add-bulk-users h4,
+.add-user-wrapper .upload-table-wrapper h4,
+.add-user-wrapper .team-settings-wrapper h4,
+.add-user-wrapper .upload-domain-wrapper h4{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;    
+    color: #23282E;
+}
+.add-user-wrapper .single-user-add .left p{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #23282E;
+}
+.add-user-wrapper .add-bulk-users .download-note{
+    display: flex;
+    justify-content: flex-end;
+}
+.add-user-wrapper .add-bulk-users .download-note span{
+    font-size: 13px;
+    margin-right: 10px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: red;
+    opacity: 0.7;
+}
+.add-user-wrapper .single-user-add .right{
+    padding-right: 4%;
+}
+.add-user-wrapper .add-bulk-users{
+    border-top: 1px solid rgba(35, 40, 46, 0.16);
+    padding: 30px 0px 0px 0px;
+}
+
+.add-user-wrapper .add-bulk-users .employedata-csvfile h5{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.32px;
+    color: #23282E;
+    margin-right: 16px;
+}
+.employedata-csvfile a{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.32px;
+    text-decoration-line: underline;
+    color: #0077B7;
+}
+.employedata-csvfile a span{
+    margin-left: 5px;
+    display: flex;
+}
+.employedata-upload{
+    width: 100%;
+    height: 48px;
+    background: #FAFAFA;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 16px;
+    margin-top: 16px;
+}
+.add-user-wrapper .upload-button{
+    position: relative;
+    padding: 0;
+}
+.add-user-wrapper .add-bulk-users .employedata-upload h4{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.32px;
+    color: #23282E;
+    font-family: "FiraSans-regular";
+    font-weight: 500;
+}
+.add-user-wrapper .upload-button button{
+    width: 162px;
+    height: 33px;
+}
+.add-user-wrapper .upload-button input[type=file]{
+    font-size: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+.add-user-wrapper .upload-table-wrapper h4{
+    margin-top: 25px;
+}
+.uploadata-table .btn-secondry{
+    width: 120px;
+    height: 33px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "FiraSans-regular";
+}
+.uploadata-table .btn-secondry:hover svg path{
+    stroke: #fff;
+    fill: none;
+}
+
+.uploadata-table table td{
+    padding: 12px 24px;
+    height: 60px;
+}
+
+.uploadata-table table td:nth-child(4),
+.uploadata-table table th:nth-child(4){
+    text-align: right;
+}
+.uploadata-table table th:nth-child(4){
+    padding-right: 55px;
+}
+.uploadata-table .download-btn{
+    margin-right: 36px;
+}
+/* responsive table */
+.uploadtable-card{
+    border: 1px solid rgba(35, 40, 46, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 16px !important;
+    margin-bottom: 0;
+}
+.uploadtable-card .btn-secondry{
+    width: 95px;
+    height: 26px;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0;
+    font-family: "FiraSans-regular";
+}
+.uploadtable-card .btn-secondry svg{
+    margin-right: 3px;
+}
+.uploadtable-card h5{
+    font-size: 14px;
+    line-height: 22px;
+    color: #23282E;
+    font-weight: normal;
+    font-family: 'FiraSans-regular';
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+.uploadtable-card ul{
+    display: flex;
+    margin-top: 8px;
+}
+.uploadtable-card li:first-child{
+    border-right: 1px solid #DCDDDE;
+    padding-right: 4px;
+    margin-right: 4px;
+}
+.uploadtable-card li{
+    font-size: 12px;
+    line-height: 12px;
+    color: #7B7E82;
+}
+/* .uploadtable-card-left */
+
+.add-user-wrapper .add-dummy{
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(35, 40, 46, 0.16);
+    margin-bottom: 10px;
+}
+.add-user-wrapper .add-dummy .toggle-file-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.add-user-wrapper .add-dummy .toggle-file-container .checkbox-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.add-user-wrapper .add-dummy .toggle-file-container .employedata-csvfile h5,
+.add-user-wrapper .add-dummy .toggle-file-container .checkbox-container span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.32px;
+    color: #23282E;
+    margin-right: 10px;
+}
+.add-user-wrapper .add-dummy .upload-button button{
+    width: 100%;
+    height: 45px;
+}
+
+.add-user-wrapper .add-dummy h4{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;    
+    color: #23282E;
+    margin-bottom: 20px;
+}
+.add-user-wrapper .add-dummy form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 0;
+}
+.add-user-wrapper .add-dummy form .group{
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    padding: 0 0 15px;
+    position: relative;
+}
+.add-user-wrapper .add-dummy form .group .form-group{
+    width: 100%;
+}
+.add-user-wrapper .add-dummy form .group .form-group .error-message.file-name{
+    font-size: 11px;
+    color: #4d5157;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    width: 95%;
+}
+.add-user-wrapper .add-dummy form .group .form-group .error-message{
+    margin-left: 5px;
+}
+.add-user-wrapper .add-dummy form .group .form-group .note{
+    color: #f2545b;
+    font-family: "firaSans-regular";
+    font-style: inherit;
+    font-weight: 100;
+    font-size: 10px;
+    position: absolute;
+    top: -20px;
+    margin-left: 5px;
+}
+.add-user-wrapper .add-dummy .field-icon {
+    position: absolute;
+    z-index: 2;
+    right: 5px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.add-user-wrapper .add-dummy .otp-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.add-user-wrapper .add-dummy .otp-form .form-group{
+    margin: 0;
+    width: 200px;
+}
+
+.add-user-wrapper .team-settings-wrapper{
+    padding: 10px 0 0;
+}
+.add-user-wrapper .team-settings-wrapper h4{
+    margin-bottom: 16px;
+}
+.add-user-wrapper .team-settings-wrapper .options{
+    display: flex;
+    padding: 13px 0 0;
+}
+.add-user-wrapper .team-settings-wrapper p.question{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;    
+    color: #23282E;
+}
+/* custom radio button css*/
+.add-user-wrapper .team-settings-wrapper .container-radio {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 40px;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #23282E;
+    opacity: 0.9;
+}
+/* Hide the browser's default radio button */
+.add-user-wrapper .team-settings-wrapper .container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+/* Create a custom radio button */
+.add-user-wrapper .team-settings-wrapper .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.add-user-wrapper .team-settings-wrapper .container-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+/* When the radio button is checked, add a blue background */
+.add-user-wrapper .team-settings-wrapper .container-radio input:checked ~ .checkmark {
+    background-color: #fff;
+    border: 1px solid var(--color-theme);
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.add-user-wrapper .team-settings-wrapper .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.add-user-wrapper .team-settings-wrapper .container-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the indicator (dot/circle) */
+.add-user-wrapper .team-settings-wrapper .container-radio .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-theme);
+}
+/******* custom radio css end *********/
+.add-user-wrapper .upload-domain-wrapper{
+    padding: 20px 0 80px;
+}
+.add-user-wrapper .upload-domain-wrapper .form-group{
+    margin: 10px 0 0;
+}
+.add-user-wrapper .upload-domain-wrapper .upload-table-wrapper h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+.add-user-wrapper .upload-domain-wrapper .input-group {
+    position: relative;
+    display: flex;
+}
+.add-user-wrapper .upload-domain-wrapper .input-group input{
+    position: relative;
+    width: 100%;
+}
+.add-user-wrapper .upload-domain-wrapper .input-group .btn-primary{
+    padding: 12px 30px;
+    margin-left: 20px;
+}
+.add-user-wrapper .upload-domain-wrapper .upload-table-wrapper td{
+    border-collapse: collapse;
+}
+.add-user-wrapper .upload-table-wrapper .uploadtable-card-right{
+    display: flex;
+    align-items: center;
+}
+.add-user-wrapper .upload-table-wrapper .uploadtable-card-right img{
+    cursor: pointer;
+    padding: 0px 0px 0px 5px;
+}
+@media screen and (max-width: 991px) {
+    .add-user-wrapper .employedata-csvcard{
+        margin: 15px 0 0;
+    }
+    .add-user-wrapper .add-bulk-users{
+        padding: 15px 0px 0px;
+    }
+    .add-user-wrapper .single-user-add{
+        padding: 20px 0px 20px;
+    }
+    .add-user-wrapper .add-bulk-users .download-note span{
+        font-size: 12px;
+    }
+    .cg-tabs.databse-tabs .react-tabs__tab{
+        width: auto;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .employedata-upload h4{
+        font-size: 12px;
+        line-height: 14px;
+        color: #7B7E82;
+        font-family: "FiraSans-regular";
+        font-weight: normal;
+    }
+    .uploadtable-card h5{
+        width: 55vw;
+    }
+    .employedata-csvcard{
+        padding: 16px;
+        margin: 16px 0 24px;
+    }
+    .employedata-upload{
+        height: 38px;
+        padding: 6px 10px;
+    }
+    .add-user-wrapper .upload-button .btn-primary {
+        width: 120px;
+        height: 26px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .employedata-csvfile{
+        justify-content: space-between;
+    }
+    .employedata-csvfile h5{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .upload-table-wrapper h4{
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 24px;
+    }
+    .database-heading h5{
+        padding-left: 16px;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 4px;
+    }
+}
+@media screen and (max-width: 820px) {
+    .add-user-wrapper .add-dummy form .group{
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }   
+    .add-user-wrapper .add-dummy form .group .error-message{
+        bottom: -15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .add-user-wrapper .single-user-add{
+        display: block;
+    }
+    .add-user-wrapper .single-user-add .left p{
+        font-size: 15px;
+    }
+    .add-user-wrapper .single-user-add .right{
+        padding-right: 0;
+        padding-top: 10px;
+    }
+    .add-user-wrapper .single-user-add .right .btn-primary{
+        width: 100%;
+    }
+    .add-user-wrapper .add-bulk-users .employedata-upload h4{
+        font-size: 12px;
+        opacity: 0.7;
+    }
+    .add-user-wrapper .add-bulk-users .employedata-csvfile h5{
+        font-size: 15px;
+    }
+    .add-user-wrapper .single-user-add .left h4,
+    .add-user-wrapper .add-bulk-users h4,
+    .add-user-wrapper .upload-table-wrapper h4,
+    .add-user-wrapper .team-settings-wrapper h4{
+        font-size: 16px;
+    }
+    .uploadtable-card h5{
+        width: 40vw;
+    }
+    .add-user-wrapper .team-settings-wrapper h4{
+        margin-bottom: 8px;
+    }
+    .add-user-wrapper .upload-button .btn-primary {
+        min-height: 20px;
+    }
+    .add-user-wrapper .employedata-csvcard{
+        padding: 20px 10px;
+    }
+    .add-user-wrapper .upload-domain-wrapper .upload-table-wrapper .m-transacton-table .c-white-card{
+        padding: 15px !important;
+    }
+    .add-user-wrapper .upload-domain-wrapper .input-group .btn-primary{
+        margin-left: 10px;
+        padding: 12px 20px;
+    }    
+    .add-user-wrapper .add-dummy .otp-form .form-group{
+        width: 150px;
+    }
+}

@@ -1,0 +1,104 @@
+.reviewtab {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(35, 40, 46, 0.16);
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.reviewtab:first-child {
+  margin-top: 24px;
+}
+.reviewtab:last-child {
+  margin: 0;
+}
+.reviewtab .reviewtab-initial-name {
+  width: 48px;
+  height: 48px;
+  background: #f3f7ff;
+  border-radius: 100%;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviewtab .reviewtab-initial-name span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #006399;
+  font-family: "firaSans-medium";
+  text-transform: uppercase;
+  opacity: 1;
+}
+.reviewtab-desc {
+  display: flex;
+}
+/* star rating */
+.reviewtab-desc .star-container {
+  padding: 0 2px !important;
+}
+.reviewtab-desc .star-container svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+/* desc */
+.reviewtab-left {
+  padding-right: 20px;
+  width: 230px;
+}
+.reviewtab-right {
+  display: flex;
+}
+.reviewtab-detail {
+  margin-bottom: 16px;
+  display: flex;
+}
+.reviewtab-desc h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #23282e;
+  margin-right: 4px;
+  font-family: "firaSans-medium";
+}
+.reviewtab-desc span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #23282e;
+  opacity: 0.6;
+}
+.reviewtab p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  margin-left: 60px;
+  text-align: justify;
+  word-wrap: break-word;
+}
+@media screen and (max-width: 991px) {
+  .reviewtab {
+    padding: 12px 16px;
+  }
+  .reviewtab-left {
+    width: 100%;
+  }
+  .reviewtab-detail {
+    flex-direction: column;
+  }
+  .reviewtab p {
+    margin-left: 0;
+  }
+  .reviewtab-desc h5 {
+    margin-right: 0;
+  }
+  .reviewtab:last-child {
+    margin-bottom: 16px;
+  }
+  .reviewtab .reviewtab-initial-name span {
+    font-family: "firaSans-regular";
+  }
+}

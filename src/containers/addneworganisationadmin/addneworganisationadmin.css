@@ -1,0 +1,248 @@
+.add-new-organisation-admin{
+    width: 100%;
+    background: #fff;
+    min-height: 80vh;
+    margin: 10px 0 0;
+    border-radius: 10px;
+    padding: 45px 56px 15px;
+}
+.add-new-organisation-admin .title h4{
+    margin-top: -20px;
+    color: #23282e;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: capitalize;
+    font-family: "firaSans-semibold";
+    font-weight: 600;
+}
+.add-new-organisation-admin form .form-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 45px;
+}
+.add-new-organisation-admin form .form-group .form-field,
+.add-new-organisation-admin form .form-group label,
+.add-new-organisation-admin .form-group .react-tel-input{
+    width: 50%;
+}
+.add-new-organisation-admin .react-multi-email{
+    padding: 0;
+    border: 0;
+    max-width: 50%;
+    /* background: #f6f7f9; */
+}
+.add-new-organisation-admin form.add-org{
+    position: relative;
+}
+.add-new-organisation-admin form .form-group .error-message{
+    left: 50%;
+}
+.add-new-organisation-admin .react-multi-email.empty > span[data-placeholder]{
+    color: unset;
+}
+.add-new-organisation-admin .react-multi-email > input{
+    width: 100% !important;
+    padding: 10px 12px !important;
+}
+.add-new-organisation-admin .react-multi-email > input:focus{
+    outline: none !important;
+    border: 1px solid #23282e !important;
+}
+.add-new-organisation-admin .react-multi-email > span[data-placeholder]{
+    /* display: inline; */
+    /* top: unset; */
+    /* bottom: 10px; */
+    /* opacity: 0.5; */
+}
+.add-new-organisation-admin form .form-group div.invite-check-box{
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+}
+.add-new-organisation-admin form .form-group input.checkbox{
+    height: 25px;
+    width: 25px;
+}
+.add-new-organisation-admin .form-group .disabled{
+    cursor: not-allowed;
+    opacity: 1;
+}
+.add-new-organisation-admin .form-group label span{
+    opacity: 0.6;
+}
+.add-new-organisation-admin form .form-group span.invite-message{
+    font-size: 12px;
+    margin-left: 10px;
+    opacity: 0.6;
+    color: #23282e;
+}
+.add-new-organisation-admin form .submit-group .btn-group{
+    display: flex;
+    justify-content: center;
+}
+.add-new-organisation-admin .submit-group .btn-group button{
+    width: 200px;
+}
+.faded03{
+    opacity: 0.3;
+}
+.add-new-organisation-admin .payment-group{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+}
+.add-new-organisation-admin .envelope{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: not-allowed;
+}
+.add-new-organisation-admin .payment-group .btn-group{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.add-new-organisation-admin .payment-group .pay-now-title{
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font: 15px 'firaSans-regular';
+    font-weight: 100;
+}
+.add-new-organisation-admin .payment-group .btn-group button{
+    width: 150px;
+}
+.add-new-organisation-admin .form-select-orgs{
+    position: absolute;
+    width: 50%;
+    right: 1px;
+    top: 0;
+}
+.add-new-organisation-admin .payment-group .form-group.duration input{
+    width: 24%;
+}
+.add-new-organisation-admin .payment-group .form-group.duration input:nth-child(3){
+    margin-left: 2%;
+}
+.add-new-organisation-admin .upload-group{
+    padding: 20px 0 50px 0;
+    overflow: hidden;
+    width: 100%;
+}
+.add-new-organisation-admin .upload-group h4.payment-message{
+    font-size: 12px;
+    padding: 20px 0 20px 10px;
+    font-weight: 100;
+    color: #f2545b;
+}
+.add-new-organisation-admin .upload-group .btn-group{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.add-new-organisation-admin .upload-group .btn-group .btn{
+    width: 150px;
+}
+.add-new-organisation-admin .upload-group .upload-file-group{
+    position: relative;
+    padding: 0;
+}
+.add-new-organisation-admin .upload-file-group input[type=file]{
+    font-size: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+.add-new-organisation-admin .added-domains{
+    margin: 10px 0 0;
+}
+.add-new-organisation-admin .added-domains li{
+    margin:5px 10px;
+    padding: 8px 15px;
+    box-sizing: content-box;
+    width: fit-content;
+    background: lightblue;
+    border-radius: 20px 0px 20px 0px;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.add-new-organisation-admin .added-domains li span{
+    word-wrap: break-word;
+    word-break: break-all;
+    display: flex;
+    align-items: center;
+}
+.add-new-organisation-admin .added-domains li span.close{
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 15px;
+    float: right;
+}
+.add-new-organisation-admin .uploaded-file{
+    margin: 10px 0 0;
+}
+.add-new-organisation-admin .uploaded-file span{
+    margin: 10px 10px;
+    font-size: 15px;
+    line-height: 35px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+@media screen and (max-width:767px) {
+    .add-new-organisation-admin form .submit-group .btn-group{
+        flex-direction: row;
+    }   
+    .add-new-organisation-admin .payment-group .btn-group{
+        flex-direction: row;
+        padding: 40px 0 0 ;
+    }
+    .add-new-organisation-admin .upload-group .btn-group{
+        flex-direction: row;
+    }
+}
+@media screen and (max-width:600px) {
+    .add-new-organisation-admin{
+        padding: 34px 20px 32px;
+    }
+    .add-new-organisation-admin form .form-group{
+        flex-direction: column;
+    }    
+    .add-new-organisation-admin form .form-group .form-field, 
+    .add-new-organisation-admin form .form-group label, 
+    .add-new-organisation-admin .form-group .react-tel-input,
+    .add-new-organisation-admin form .form-group div.invite-check-box{
+        width: 100%;
+        max-width: 100%;
+    }
+    .add-new-organisation-admin .react-multi-email{
+        min-width: 100%;
+    }
+    .add-new-organisation-admin form .form-group .error-message{
+        left: 0;
+    }
+    .add-new-organisation-admin .form-select-orgs{
+        position: inherit;
+        width:99%;
+        right: 0;
+        margin: 0 1px;
+    }
+    .add-new-organisation-admin .payment-group .form-group.duration input{
+        width: 100%;
+    }
+    .add-new-organisation-admin .payment-group .form-group.duration input:nth-child(3){
+        margin: 8px 0;
+    }
+    .add-new-organisation-admin .upload-group .btn-group .btn{
+        width: 130px;
+    }
+}

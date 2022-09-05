@@ -1,0 +1,143 @@
+.cg-tabs .react-tabs__tab-list {
+  display: flex;
+  position: relative;
+}
+.cg-tabs .react-tabs__tab {
+  font-size: 18px;
+  line-height: 22px;
+  color: rgb(35 40 46 / 50%);
+  padding: 12px;
+  width: 180px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+.cg-tabs .react-tabs__tab::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.cg-tabs .react-tabs__tab--selected {
+  font-weight: 500;
+  font-family: "firaSans-medium";
+  color: #23282e;
+}
+.cg-tabs .react-tabs__tab.react-tabs__tab--selected::before {
+  background: var(--color-theme);
+}
+/* dropdown */
+.question-dropdown {
+  position: absolute;
+  right: 0;
+}
+.add-question {
+  position: relative;
+}
+.add-question a {
+  margin: 8px 0;
+  padding-left: 0;
+}
+.add-question button {
+  width: 160px;
+  padding: 0;
+  height: 40px;
+  background: #fff;
+}
+.google-sheets {
+  padding: 4px 0;
+  margin-bottom: 4px;
+}
+.add-question .dropdown-menu {
+  width: 200px;
+  height: 184px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  padding: 0 16px;
+  overflow: auto;
+}
+.addicon {
+  width: 24px;
+  height: 24px;
+  background: rgba(35, 165, 102, 0.1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.google-sheets {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.addicon.google-icon {
+  background: rgba(35, 165, 102, 0.1);
+}
+.addicon.mcq-icon {
+  background: rgba(32, 161, 241, 0.1);
+}
+.addicon.check-icon {
+  background: rgba(115, 94, 207, 0.1);
+}
+.addicon.fillblank-icon {
+  background: #f4f7f9;
+}
+@media screen and (max-width: 991px) {
+  .cg-tabs .react-tabs__tab-list {
+    margin-left: 16px;
+    overflow-x: auto;
+    width: calc(100% - 16px);
+    position: inherit;
+  }
+  .cg-tabs .react-tabs__tab {
+    font-size: 16px;
+    line-height: 19px;
+    flex: 1;
+    white-space: nowrap;
+  }
+  .cg-tabs .react-tabs__tab-panel {
+    padding: 0 16px;
+  }
+  /* add button */
+  .add-question button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff),
+      #e25569;
+    background-position: center;
+    background-size: 50% 2px, 2px 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transform: rotate(0);
+    transition: all 0.3s linear;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1;
+  }
+  .add-question.show button {
+    transform: rotate(-45deg);
+  }
+  .add-question button span {
+    display: none;
+  }
+  .add-question .dropdown-menu {
+    position: fixed !important;
+    top: calc(100vh - 104px) !important;
+    left: calc(100% - 12px) !important;
+    transform: translate3d(-205px, -146px, 0px) !important;
+  }
+  .add-question.show {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(35, 40, 46, 0.16);
+    z-index: 99;
+  }
+}

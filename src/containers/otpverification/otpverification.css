@@ -1,0 +1,78 @@
+.otp h5 {
+  margin-bottom: 8px;
+}
+
+.otp .form-control::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #23282E;
+  opacity: 0.5;
+}
+
+.otp-edit {
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 160.5%;
+  color: rgb(35 40 46 / 72%);
+}
+
+.otp-edit a {
+  font-size: 14px;
+  line-height: 17px;
+  color: #e25569;
+  display: inline-flex;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.otp-resend {
+  font-size: 16px;
+  line-height: 19px;
+  color: #23282e;
+  text-align: right;
+  margin-top: 16px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.otp-resend a {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #e25569;
+  display: inline-flex;
+  margin-left: 4px;
+}
+
+.otp-resend .resend-counter {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: -15px;
+  display: block;
+  color: #e25569;
+}
+
+.otp-resend a.disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.otp button {
+  margin-top: 36px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .otp h5 {
+    margin-bottom: 16px;
+  }
+
+  .otp-resend {
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

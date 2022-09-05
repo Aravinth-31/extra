@@ -1,0 +1,110 @@
+.onborard-wrapper{
+    display: flex;
+    min-height: 100vh;
+    padding-top: 72px;
+}
+.outer-container .onborard-wrapper{
+    padding: 0px;
+}
+.onboard-left,
+.onboard-right{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 4% 2%;
+}
+.onboard-left{
+    background: #FFFAF5;
+    width: 45%;
+}
+.onboard-right{
+    width: 55%;
+}
+.onboard-right .login{
+    padding: 10% 0 0 0;
+}
+.onboard-left h2{
+    font-size: 24px;
+    line-height: 38px;
+    color: #4d5157;
+    margin-bottom: 60px;
+    max-width: 390px;
+    font-family: 'firaSans-semibold';
+    font-weight: 600;
+}
+.onboard-card{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+.onboard-card img{
+    margin-right: 16px;
+}
+.onboard-card h5{
+    font-size: 20px;
+    line-height: 24px;
+    color: #4d5157;
+    margin-bottom: 12px;
+    font-family: 'firaSans-medium';
+    font-weight: 500;
+}
+.onboard-card p{
+    font-size: 16px;
+    line-height: 150%;
+    color: #23282E;
+    max-width: 350px;
+    opacity: 0.72;
+}
+.admin-login{
+    background: linear-gradient(to bottom, #f8f8f8, #f1f1f1);
+    margin: 5% 30%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px rgb(255, 255, 255),40px 40px 80px rgba(0, 0, 0, 0.25);
+}
+.admin-login .form-control{
+    background: white;
+}
+.admin-login .login-header-content{
+    display: flex;
+    justify-content: center;
+}
+.admin-login .login-header img{
+    /* margin-left: auto; */
+    right: initial;
+    width: 150px;
+}
+.outer-container{
+    background: linear-gradient(85.42deg, #e25569 0%, #fb9946 100%)
+}
+    @media screen and (max-width: 500px){
+    .admin-login{
+        width: 100%;
+        margin: 0%;
+        background: white
+    }
+    .admin-login .form-control{
+        background: #f6f7f9;
+    }
+    .admin-login .login-header img{
+        width: 100px;
+    }
+    .outer-container{
+        background: white;
+    }
+        }
+@media screen and (max-width: 991px){
+    .onboard-left{
+        display: none;
+    }
+    .onboard-right{
+        width: 100%;
+        padding: 54px 16px 50px;
+        align-items: flex-start;
+    }
+    .onborard-wrapper {
+        padding-top: 65px;
+    }
+    .onboard-right .login{
+        padding: 0;
+    }
+}

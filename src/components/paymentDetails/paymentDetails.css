@@ -1,0 +1,75 @@
+
+.search-bar  {
+    margin-bottom: 10px;
+  }
+
+.payment .title{
+    font-size: 30px;
+    margin-top:10px;
+    margin-bottom: 20px;
+    /* color: #23282e;; */
+    color : #e25569;
+    font-size: 30px;
+    line-height: 22px;
+    text-transform: capitalize;
+    font-family: "firaSans-semibold";
+    font-weight: 600;    
+}
+
+.container-payment{
+    width: 100%;
+    margin:0 auto;
+    padding: 20px 4px 2px;
+    
+    
+}
+.data-table{
+    border: 1px outset black;
+    border-radius: 20px;  
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.16);
+    
+}
+.rdt_TableHeader{
+    border-radius: 20px 20px 0px 0px; 
+   
+}
+
+.rdt_TableHead{
+    border-radius: initial;
+    
+}
+.view-btn {
+    padding: 5px 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 0px solid #e25569;
+    outline: none;
+    font-size: 14px;
+    position: relative;
+    transition: all 0.2s linear;
+    font-family: "FiraSans-semibold";
+    font-weight: 200;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width:60px;
+
+    
+  }
+ .rdt_Pagination{
+        font-family: "firaSans-medium"; 
+        border-radius: 0px 0px 20px 20px; 
+            
+ }
+ .rdt_Pagination span{
+    color :#737373;
+    font-size: 15px;
+
+ }
+ .rdt_Pagination div select{
+    color :#737373;
+    font-size: 15px;
+    font-family: "firaSans-medium"; 
+
+ }

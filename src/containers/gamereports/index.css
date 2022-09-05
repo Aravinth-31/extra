@@ -1,0 +1,66 @@
+.reports-tab ul li {
+  flex: 1;
+}
+.reports-tab.cg-tabs .react-tabs__tab::before {
+  background: rgba(0, 0, 0, 0.1);
+  height: 1px;
+}
+
+.reports-tab.cg-tabs .react-tabs__tab--selected::before {
+  height: 3px;
+}
+.gamereport-title h5 {
+  font-weight: 500;
+  font-family: "firaSans-medium";
+  font-size: 18px;
+  line-height: 22px;
+  color: #23282e;
+  margin-bottom: 16px;
+}
+.responsive-show-data {
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 16px;
+  position: relative;
+}
+.mb0 h5 {
+  margin-bottom: 0;
+}
+.game-report .no-data{
+  /* position: absolute; */
+  display: flex;
+  height: 200px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  opacity: 0.5;
+  color: #23282e;
+}
+.game-report .mshow .no-data{
+  height: 40px;
+  font-size: 16px;
+  position: relative;
+}
+.game-report .react-tabs__tab-panel {
+  position: relative;
+  padding: 5px 0;
+}
+.report-section .download-grp{
+  display: flex;
+}
+.report-section .download-grp .btn{
+  margin-left: 20px;
+}
+@media screen and (max-width:991px) {
+  .game-report .mhide{
+    display: none !important;
+  }
+  .report-section .download-grp .btn{
+    margin-left: 10px;
+  }
+}

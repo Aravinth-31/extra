@@ -1,0 +1,35 @@
+.report-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.report-section h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #23282e;
+  font-family: "firaSans-medium";
+}
+.report-section h5 img {
+  margin-right: 16px;
+  cursor: pointer;
+}
+.report-section button {
+  padding: 8px 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .report-section button {
+    padding: 8px 14px;
+  }
+  .report-section button span {
+    display: none;
+  }
+  .report-section button img {
+    margin: 0;
+  }
+  .report-section {
+    margin-bottom: 15px;
+  }
+}

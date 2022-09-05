@@ -1,0 +1,170 @@
+.playcard-wrapper .no-data{
+    color: #e25569;   
+}
+.category-wrapper .profile-name-common{
+    display: none;
+}
+.category-wrapper .category-desc {
+    text-align: justify;
+    width: 100%;
+    font-size: 16px;
+    color: #23282e;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.category-wrapper .category-desc .show-more-text {
+    color: #e25569;
+    font-weight: 600;
+    cursor: pointer;
+}  
+.category-wrapper .no-game-wrapper{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-wrapper .no-game-wrapper .no-game{
+    font-family: firaSans-regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #23282e;
+    opacity: 0.5;
+    text-align: center;
+}
+.category-wrapper .no-game-wrapper .no-game-span{
+    font-family: firaSans-regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #e25569;
+    margin-top: 15px;
+}
+
+/* add edit  starts*/
+.addedit-category{
+    min-height: 85vh;
+    background: #fff;
+    border-radius: 10px;
+    padding:2% 5%;    
+}
+.addedit-category .title{
+    font-size: 30px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    color: #23282e;;
+    font-size: 24px;
+    line-height: 22px;
+    text-transform: capitalize;
+    font-family: "firaSans-semibold";
+    font-weight: 600;    
+}
+.addedit-category form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0 30px;
+}
+.addedit-category form .group{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.addedit-category form .group .form-group{
+    width: 45%;
+}
+.addedit-category form .form-group{
+    width: 100%;
+}
+.addedit-category form .form-group textarea{
+    height: 60px;
+}
+.addedit-category form .btn{
+    width: 200px;
+    margin-top: 20px;
+}
+.addedit-category hr.faded{
+    opacity: 0.3;
+}
+.addedit-category .edit-category{
+    margin-top: 30px;
+}
+.addedit-category .form-select .react-select__control, 
+.addedit-category .form-select .react-select__control--is-focused, 
+.addedit-category .form-select .react-select__value-container{
+    height: unset !important;
+}
+/* add edit  end*/
+
+@media screen and (max-width:991px) {    
+    .category-wrapper .sidebar{
+        display: none;
+    }    
+    .category-wrapper .breadcrumb{
+        display: none;
+    }
+    .category-wrapper .profile-section{
+        margin-top: -30px;
+    }
+    .managegames-category-wrapper .sidebar{
+        display: block;
+    }
+    .managegames-category-wrapper .profile-section{
+        margin-top: 10px;
+    }
+    .managegames-category-wrapper .profile-section .profile-name{
+        display: none;
+    }
+    .category-wrapper .profile-name{
+        display: none;
+    }
+    .category-wrapper .profile-name-common{
+        display: block;
+    }
+    .category-wrapper .no-game-wrapper .no-game {
+        font-size: 16px;
+    }
+    .category-wrapper .no-game-wrapper .no-game-span{
+    font-size: 14px;
+    }
+    .category-wrapper .category-desc{
+        margin-top: -10px;
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .category-wrapper .no-game-wrapper{
+      height: 50vh;
+    }
+    .category-wrapper .no-game-wrapper .no-game {
+      font-size: 14px;
+    }
+    .category-wrapper .no-game-wrapper .no-game-span{
+      margin-top: 5px;
+      font-size: 12px;
+    }
+    .category-wrapper .category-desc{
+        font-size: 14px;
+    }
+}
+  
+@media screen and (max-width: 400px) {
+    .category-wrapper .no-game-wrapper .no-game {
+      font-size: 12px;
+    }
+    .category-wrapper .no-game-wrapper .no-game-span{
+      font-size: 10px;
+    }
+}
+  
+  

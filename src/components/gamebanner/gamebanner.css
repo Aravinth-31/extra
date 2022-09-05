@@ -1,0 +1,269 @@
+.game-banner{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  height: 360px;
+}
+.game-banner-left{
+  width: calc(100% - 186px);
+  height: 435px;
+  left: 240px;
+  top: 137px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.game-banner-left img,
+.game-banner-left video,
+.game-banner-left iframe{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.game-banner-left video{
+  cursor: auto;
+}
+.game-banner-left .how-banner-desc{
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 64px !important;
+  width: 64px !important;
+  margin: auto;
+}
+.game-banner-left .how-banner-desc img{
+  /* width: unset;
+  height: unset; */
+  border-radius: 0;
+}
+.game-banner-left .how-banner-desc .banner-play,
+.game-banner-left .how-banner-desc .banner-pause{
+  margin-top: 0;
+  background: none;
+}
+.game-banner-left .how-banner-desc .banner-pause{
+  visibility: hidden;
+  width: 64px;
+  height: 64px;
+}
+.game-banner-left:hover .how-banner-desc .banner-pause{
+  visibility: visible;
+}
+.game-banner-img{
+  width: 100% ;
+  height: 100% ;
+}  
+.game-banner-img .playback-video{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #000;
+}
+.game-banner-img .playback-video div{
+  width: 100% !important;
+  height: 100% !important;
+}
+.game-banner-right{
+  height: 435px;
+  overflow-y: auto;
+  padding-right: 8px;
+  /* hide temporary*/
+  display: none;
+}
+.game-thumbnil{
+  width: 160px;
+  height: 114px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer
+}
+.game-thumbnil:last-child{
+  margin-bottom: 0px;
+}
+.game-thumbnil img,
+.game-thumbnil video,
+.game-thumbnil iframe{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.game-thumbnil.active{
+  border: 2px solid #E25569;
+}
+.play-paused{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  box-shadow: none;
+  border: 0;
+}
+.play-paused span{
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 40px;
+  border-color: transparent transparent transparent #fff;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 20px 0 20px 35px;
+  margin-left: 10px;
+}
+.play-paused.paused span{
+    border-style: double;
+    border-width: 0px 0 0px 35px;
+    margin: 0;
+}
+.play-paused:hover span{
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.8);
+}
+/* thumbnil play icon*/
+.game-thumbnil .play-paused{
+  width: 40px;
+  height: 40px;
+}
+.game-thumbnil .play-paused span{
+  height: 20px;
+  border-width: 10px 0 10px 15px;
+  margin-left: 5px;
+}
+.game-thumbnil .play-paused.paused span{
+    border-width: 0px 0 0px 25px;
+}
+/* scrollbar */
+.game-banner-right::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 30px;
+}
+/* Track */
+.game-banner-right::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+.game-banner-right::-webkit-scrollbar-thumb {
+  background: #DCDCDC;
+  border-radius: 30px;
+}
+/* Handle on hover */
+.game-banner-right::-webkit-scrollbar-thumb:hover {
+  background: #F1F1F1;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .game-banner-left .how-banner-desc .banner-play img{
+    margin-left: 0;
+  }
+  .game-banner-left .how-banner-desc{
+    height: 48px;
+    width: 48px;
+    margin: auto;
+  }
+  .game-banner-left .how-banner-desc .banner-pause{
+    width: 48px;
+    height: 48px;
+    /* visibility: visible; */
+  }
+  .game-banner-left .how-banner-desc .banner-play{
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .game-banner{
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  .game-banner-left{
+    width: 100%;
+    height: 185px;
+    margin-bottom: 10px;
+  }
+  .game-banner-left .play-paused{
+    width: 40px;
+  }
+  .game-thumbnil{
+    min-width: 106px;
+    max-width: 106px;
+    width: 106px;
+    height: 72px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    flex: 1;
+  }
+  .game-banner-right{
+    height: auto;
+    overflow: auto;
+    display: flex;
+    padding-bottom: 10px;
+    padding-right: 0;
+    /*hide temporarily*/
+    display: none;
+  }
+  .game-banner-img{
+    width: 100% ;
+    height: 100% ;
+    display: flex;
+  }  
+  /* thumbnil play icon*/
+  .play-paused{
+    width: 40px;
+    height: 40px;
+  }
+  .play-paused span{
+    height: 20px;
+    border-width: 10px 0 10px 15px;
+    margin-left: 5px;
+  }
+  .play-paused.paused span{
+      border-width: 0px 0 0px 25px;
+  }
+/* scrollbar */
+  .game-banner-right::-webkit-scrollbar {
+    height: 4px;
+    border-radius: 30px;
+  }
+  /* Track */
+  .game-banner-right::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  .game-banner-right::-webkit-scrollbar-thumb {
+    background: #DCDCDC;
+    border-radius: 30px;
+  }
+
+  /* Handle on hover */
+  .game-banner-right::-webkit-scrollbar-thumb:hover {
+    background: #F1F1F1;
+    border-radius: 30px;
+  }
+}
